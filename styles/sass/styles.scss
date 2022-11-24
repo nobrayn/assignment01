@@ -1,0 +1,6 @@
+@use 'setup' as *;
+@use 'variables' as *;
+
+body {
+    background-color: $primaryBackground;
+}
