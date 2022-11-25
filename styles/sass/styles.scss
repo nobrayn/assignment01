@@ -1,6 +1,12 @@
 @use 'setup' as *;
 @use 'variables' as *;
 
+// fontawesome styling
+.fa-solid,
+.fa-brands {
+        color: white;
+}
+
 body {
     background-color: $primaryBackground;
 }

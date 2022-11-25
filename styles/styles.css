@@ -226,6 +226,11 @@ html {
   overflow: hidden;
 }
 
+.fa-solid,
+.fa-brands {
+  color: white;
+}
+
 body {
   background-color: #152D20;
 }
