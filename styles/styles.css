@@ -253,6 +253,28 @@ a {
   display: inline-block;
 }
 
+.emailForm {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+button {
+  width: 29.5%;
+  background: black;
+  color: #FCFCFC;
+  padding: 5px;
+  border: none;
+  height: 2.9rem;
+}
+
+input {
+  width: 69.5%;
+  border: none;
+  height: 2.9rem;
+}
+
 html {
   font-size: 62.5%;
   color: #FCFCFC;

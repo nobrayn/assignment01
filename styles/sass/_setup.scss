@@ -34,24 +34,29 @@ a {
     display: inline-block;
 }
 
-// trying to get the button styling right
-// input {
-//     all: unset;
-//     background-color: #FCFCFC;
-// }
+// input and submit button styling for footer
+.emailForm {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
 
-// input[type="submit"],
-// input[type="reset"] {
-//     background: none;
-//     font-size: 1.8rem;
-//     line-height: 29px;
-//     color: inherit;
-//     border: none;
-//     padding: 0;
-//     font: inherit;
-//     cursor: pointer;
-//     outline: inherit;
-// }
+button {
+    width: 29.5%;
+    background: black;
+    color: #FCFCFC;
+    padding: 5px;
+    border: none;
+    height: 2.9rem;
+}
+
+input {
+    width: 69.5%;
+    border: none;
+    height: 2.9rem;
+}
+
 // font styling to follow, taken from style guide (font, font sizing, line height, alignment)
 
 html {
