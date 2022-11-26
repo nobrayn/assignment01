@@ -6,41 +6,103 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-// google fonts
 
-// font-family: 'Cormorant Garamond',
-// serif;
 
-// font-family: 'Fredericka the Great',
-// cursive;
+// font styling to follow, taken from style guide
 
-// font-family: 'Roboto',
-// sans-serif;
+html {
+    color: #FCFCFC;
+}
 
-// Heading Text (Animal Refuge)
-// FrederickatheGreat, Regular, 120px
-// Right, Line height: 117px
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Fredericka the Great', cursive;
+}
 
-// Heading Text (suzie's story)
-// FrederickatheGreat, Regular, 51px
+h5,
+a {
+    font-family: 'Cormorant Garamond', serif;
+}
 
-// Heading Text (some of our ...)
-// FrederickatheGreat, Regular, 49px
-// Center
-
-// Heading CormorantGaramond, Semibold, 35px
-
-// Heading Text (Facinating facts.)
-// FrederickatheGreat, Regular, 35px
-
-// Text Style
-// CormorantGaramond, Semibold, 22px
-// Line height: 29px
-
+// p
 // Body Text
 // Roboto, Light, 20px
 // Line height: 29px
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #FCFCFC;
+    font-size: 20px;
+    line-height: 29px;
+}
 
-// Button text
+.blog p {
+    color: #000;
+}
+
+// h1
+// Heading Text (Animal Refuge)
+// FrederickatheGreat, Regular, 120px
+// Right, Line height: 117px
+h1 {
+    font-size: 120px;
+    line-height: 117px;
+    text-align: right;
+}
+
+// h2
+// Heading Text (suzie's story)
+// FrederickatheGreat, Regular, 51px
+h2 {
+    font-size: 51px;
+    text-align: center;
+}
+
+// h3
+// Heading Text (some of our ...)
+// FrederickatheGreat, Regular, 49px
+// Center
+h3 {
+    color: #152D20;
+    font-size: 49px;
+    text-align: center;
+}
+
+// h4
+// Heading Text (Fascinating facts.)
+// FrederickatheGreat, Regular, 35px
+h4 {
+    color: #152D20;
+    font-size: 35px;
+}
+
+// h5
+// Heading CormorantGaramond, Semibold, 35px
+h5 {
+    font-size: 35px;
+}
+
+// anchor tags except buttons
+// Text Style
+// CormorantGaramond, Semibold, 22px
+// Line height: 29px
+a {
+    font-size: 22px;
+    line-height: 29px;
+}
+
+// anchor tags in upper and lower nav section only
+a .navLink {
+// this may not be necessary - will revisit
+}
+
+// "Read More" button text (.readMore)
 // CormorantGaramond. Semibold. 18px
 // Center, Line height: 29px
+a .readMore {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+

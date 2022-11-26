@@ -226,15 +226,118 @@ html {
   overflow: hidden;
 }
 
+html {
+  color: #FCFCFC;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fredericka the Great", cursive;
+}
+
+h5,
+a {
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #FCFCFC;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.blog p {
+  color: #000;
+}
+
+h1 {
+  font-size: 120px;
+  line-height: 117px;
+  text-align: right;
+}
+
+h2 {
+  font-size: 51px;
+  text-align: center;
+}
+
+h3 {
+  color: #152D20;
+  font-size: 49px;
+  text-align: center;
+}
+
+h4 {
+  color: #152D20;
+  font-size: 35px;
+}
+
+h5 {
+  font-size: 35px;
+}
+
+a {
+  font-size: 22px;
+  line-height: 29px;
+}
+
+a .readMore {
+  font-size: 18px;
+  line-height: 29px;
+}
+
 .fa-solid,
 .fa-brands {
   color: white;
+}
+
+/* stripping styles/basic styling */
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 body {
   background-color: #152D20;
 }
 
-h1 {
-  font-size: 125%;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 90%;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

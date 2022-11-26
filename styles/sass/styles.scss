@@ -7,10 +7,45 @@
         color: white;
 }
 
+/* stripping styles/basic styling */
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+
+}
 body {
     background-color: $primaryBackground;
 }
 
-h1 {
-    font-size: 125%;
+.wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 90%;
+}
+
+// placeholder to make site navigable for now
+img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
