@@ -38,6 +38,7 @@ header {
     right: 20px;
 }
 
+// flex settings for Suzie's Story
 .feature .wrapper {
     margin-top: 80px;
     display: flex;
@@ -57,6 +58,7 @@ header {
     }
 }
 
+// button styling
 .readMore {
     background-color: white;
     color: #000;
@@ -64,6 +66,7 @@ header {
         margin-top: 30px;
 }
 
+// flex settings for gallery
 .gallery {
     background-color: #C3D3CB;
     padding: 50px 30px;
@@ -96,6 +99,7 @@ header {
     }
 }
 
+// blog section, 2x2 grid, full-bleed section so flex-basis set at 50%, no wrapper for this section
 .blog {
     background-color: #FCFCFC;
     display: flex;
@@ -109,7 +113,7 @@ header {
 }
 .grid2x2 > div {
     display: flex;
-    flex-basis: calc(50% - 40px);
+    flex-basis: 50%;
     justify-content: center;
     flex-direction: column;
 }
@@ -132,6 +136,17 @@ header {
 
 .footerContainer {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
+}
+
+
+
+.contact {
+    text-align: right;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #000;
 }
