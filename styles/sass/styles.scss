@@ -6,6 +6,10 @@ body {
     background-color: $primaryBackground;
 }
 
+img {
+    max-width: 100%;
+}
+
 // wrapper for all sections except blog and copyright
 .wrapper {
     margin: 0 auto;
@@ -22,29 +26,69 @@ header {
 
 .upperNav {
     display: flex;
-        li {
-            margin: 0 10px;
-        }
+    li {
+        margin: 0 10px;
+    }
 }
 
+// positioning favicons to bottom right of header, will be hidden for mobile
 .icons {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
+    right: 20px;
 }
 
-.feature {
+.feature .wrapper {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imageContainer {
+    margin-right: 30px;
+    flex-basis: 30%;
+}
+
+.textContainer {
+    flex-basis: 70%;
+    margin-bottom: 80px;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+// revisit this - read more button is crowding <p> text
+.readMore {
+    background-color: white;
+    color: #000;
+    padding: 10px 20px;
+}
+
+.gallery {
+    background-color: #C3D3CB;
+    padding: 50px 30px;
+    li {
+        flex-basis: 32%;
+        padding-top: 20px;
+    }
+    h3 {
+        margin: 30px 100px;
+    }
+}
+
+.galleryFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linksFlex {
     display: flex;
 }
-// placeholder to make site navigable for now
-// img {
-//     width: 100%;
-//     max-width: 600px;
-// }
 
-.btmBox img{
+.blog .topBox img,
+.btmBox img {
     width: 100%;
-    max-width: 800px;
+    max-width: 50%;
 }
 
 .footerContainer {
