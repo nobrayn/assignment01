@@ -6,11 +6,38 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+// fontawesome styling
+.fa-solid,
+.fa-brands {
+    color: white;
+}
 
+/* stripping styles/basic styling */
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
 
-// font styling to follow, taken from style guide
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+
+}
+
+// font styling to follow, taken from style guide (font, font sizing, line height, alignment)
 
 html {
+    font-size: 62.5%;
     color: #FCFCFC;
 }
 
@@ -19,11 +46,13 @@ h2,
 h3,
 h4 {
     font-family: 'Fredericka the Great', cursive;
+    text-transform: uppercase;
 }
 
 h5,
 a {
     font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
 }
 
 // p
@@ -33,7 +62,7 @@ a {
 p {
     font-family: 'Roboto', sans-serif;
     color: #FCFCFC;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 29px;
 }
 
@@ -46,7 +75,7 @@ p {
 // FrederickatheGreat, Regular, 120px
 // Right, Line height: 117px
 h1 {
-    font-size: 120px;
+    font-size: 12rem;
     line-height: 117px;
     text-align: right;
 }
@@ -55,7 +84,7 @@ h1 {
 // Heading Text (suzie's story)
 // FrederickatheGreat, Regular, 51px
 h2 {
-    font-size: 51px;
+    font-size: 5.1rem;
     text-align: center;
 }
 
@@ -65,7 +94,7 @@ h2 {
 // Center
 h3 {
     color: #152D20;
-    font-size: 49px;
+    font-size: 4.9rem;
     text-align: center;
 }
 
@@ -74,13 +103,13 @@ h3 {
 // FrederickatheGreat, Regular, 35px
 h4 {
     color: #152D20;
-    font-size: 35px;
+    font-size: 3.5rem;
 }
 
 // h5
 // Heading CormorantGaramond, Semibold, 35px
 h5 {
-    font-size: 35px;
+    font-size: 3.5rem;
 }
 
 // anchor tags except buttons
@@ -88,7 +117,7 @@ h5 {
 // CormorantGaramond, Semibold, 22px
 // Line height: 29px
 a {
-    font-size: 22px;
+    font-size: 2.2rem;
     line-height: 29px;
 }
 
@@ -101,8 +130,6 @@ a .navLink {
 // CormorantGaramond. Semibold. 18px
 // Center, Line height: 29px
 a .readMore {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 29px;
 }
-
-

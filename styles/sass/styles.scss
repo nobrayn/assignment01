@@ -1,43 +1,41 @@
 @use 'setup' as *;
 @use 'variables' as *;
 
-// fontawesome styling
-.fa-solid,
-.fa-brands {
-        color: white;
-}
 
-/* stripping styles/basic styling */
-body,
-p,
-ul,
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit;
-
-}
 body {
     background-color: $primaryBackground;
 }
 
+// wrapper for all sections except blog and copyright
 .wrapper {
     margin: 0 auto;
     max-width: 1080px;
     width: 90%;
 }
 
+header {
+    background-image: url(../animal-land-assets/image-1.jpg);
+    height: 100vh;
+    padding: 50px 0;
+    background-size: cover;
+}
+
+.upperNav {
+    display: flex;
+        li {
+            margin: 0 10px;
+        }
+}
+
+.icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.feature div {
+    display: flex;
+}
 // placeholder to make site navigable for now
 img {
     width: 100%;

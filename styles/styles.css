@@ -226,69 +226,6 @@ html {
   overflow: hidden;
 }
 
-html {
-  color: #FCFCFC;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Fredericka the Great", cursive;
-}
-
-h5,
-a {
-  font-family: "Cormorant Garamond", serif;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  color: #FCFCFC;
-  font-size: 20px;
-  line-height: 29px;
-}
-
-.blog p {
-  color: #000;
-}
-
-h1 {
-  font-size: 120px;
-  line-height: 117px;
-  text-align: right;
-}
-
-h2 {
-  font-size: 51px;
-  text-align: center;
-}
-
-h3 {
-  color: #152D20;
-  font-size: 49px;
-  text-align: center;
-}
-
-h4 {
-  color: #152D20;
-  font-size: 35px;
-}
-
-h5 {
-  font-size: 35px;
-}
-
-a {
-  font-size: 22px;
-  line-height: 29px;
-}
-
-a .readMore {
-  font-size: 18px;
-  line-height: 29px;
-}
-
 .fa-solid,
 .fa-brands {
   color: white;
@@ -315,6 +252,72 @@ a {
   text-decoration: inherit;
 }
 
+html {
+  font-size: 62.5%;
+  color: #FCFCFC;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fredericka the Great", cursive;
+  text-transform: uppercase;
+}
+
+h5,
+a {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #FCFCFC;
+  font-size: 2rem;
+  line-height: 29px;
+}
+
+.blog p {
+  color: #000;
+}
+
+h1 {
+  font-size: 12rem;
+  line-height: 117px;
+  text-align: right;
+}
+
+h2 {
+  font-size: 5.1rem;
+  text-align: center;
+}
+
+h3 {
+  color: #152D20;
+  font-size: 4.9rem;
+  text-align: center;
+}
+
+h4 {
+  color: #152D20;
+  font-size: 3.5rem;
+}
+
+h5 {
+  font-size: 3.5rem;
+}
+
+a {
+  font-size: 2.2rem;
+  line-height: 29px;
+}
+
+a .readMore {
+  font-size: 1.8rem;
+  line-height: 29px;
+}
+
 body {
   background-color: #152D20;
 }
@@ -323,6 +326,34 @@ body {
   margin: 0 auto;
   max-width: 1080px;
   width: 90%;
+}
+
+header {
+  background-image: url(../animal-land-assets/image-1.jpg);
+  height: 100vh;
+  padding: 50px 0;
+  background-size: cover;
+}
+
+.upperNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.upperNav li {
+  margin: 0 10px;
+}
+
+.icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.feature div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 img {
