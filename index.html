@@ -15,7 +15,7 @@
 	<title>Animal Refuge</title>
 </head>
 <body>
-	<header>
+	<header id="home">
 		<div class="wrapper">
 			<nav>
 				<ul>
@@ -23,13 +23,13 @@
 						<a href="#home">Home</a>
 					</li>
 					<li>
-						<a href="#about">About</a>
+						<a href="#">About</a> <!-- no acceptable "about" section on this page -->
 					</li>
 					<li>
 						<a href="#blog">Blog</a>
 					</li>
 					<li>
-						<a href="#contact">Contact</a>
+						<a href="#footer">Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -73,7 +73,7 @@
 					<h2>Suzie's Story</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus modi tenetur, rerum illum voluptatem quis veniam ipsam voluptatum sunt sit, quia accusamus ex facilis nulla explicabo omnis molestiae commodi provident harum quaerat cumque repudiandae iste! Atque omnis, accusantium eos exercitationem consequuntur mollitia perferendis eum, iste expedita illum autem necessitatibus ex optio impedit sed magni repellat maxime possimus. Doloremque, quasi? Dolores.</p>
 				</div>
-				<button>Read More</button>
+				<a class="readMore readMoreOne" href="#">Read More</a>
 			</div>
 		</section>
 
@@ -110,16 +110,66 @@
 			</div>
 		</section>
 
-		<article class="stories" id="stories">
-			<!-- you'll get this -->
+		<article class="blog" id="blog">
+			<!-- blog/read more section -->
+			<div class="topBox">
+				<img src="./animal-land-assets/image-7.jpg" alt="two zebras surround bo lush green jungle">
+				<div class="storyBox">
+					<h4>Fascinating Facts about Zebras</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint possimus deleniti architecto provident voluptatem quaerat molestias, est quae alias soluta, sit qui vel? Expedita officiis laborum est nihil.</p>
+					<a class="readMore readMoreTwo" href="#">Read More</a>
+				</div>
+			</div>
+
+			<div class="btmBox">
+				<img src="./animal-land-assets/image-2.jpg" alt="closeup of grey housecat putting its paw into a woman's hand">
+				<div class="storyBox">
+					<h4>The Bond Between Animals and Humans</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptatum, doloribus quae tempore nam quisquam at corrupti accusamus, culpa mollitia et ullam? Quidem itaque perferendis fugiat placeat reiciendis quos a.</p>
+					<a class="readMore readMoreThree" href="#">Read More</a>
+				</div>
+			</div>
 		</article>
 	</main>
 
-	<footer>
+	<footer id="footer">
 		<div class="wrapper">
-			<!-- okay that'll do -->
+			<div class="footerNav">
+				<ul>
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#blog">Blog</a>
+					</li>
+					<li>
+						<a href="#gallery">Gallery</a>
+					</li>
+					<li>
+						<a href="#footer">Contact</a>
+					</li>
+				</ul>
+			</div>
 
+			<div class="newsletterForm">
+				<h5>Stay Updated</h5>
+				<p>Subscribe to our newsletter to stay updated.</p>
+				<form action="#">
+					<label for="emailAddress"></label>
+					<input type="text" id="emailAddress" name="emailAddress" placeholder="email address">
+					<input type="submit" value="Subscribe">
+				</form>
+			</div>
+
+			<div class="contact">
+				<h5>Contact</h5>
+				<p>info@email.com | 123 - 456 - 7890</p>
+				<p>123 some road, Toronto, ON</p>
+				<p>A5A 5A5, Canada</p>
+			</div>
 		</div>
+
+		<p class="copyright">Copyright © 2022 Juno College</p>
 	</footer>
 </body>
 </html>
