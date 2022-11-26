@@ -250,11 +250,13 @@ ul {
 a {
   color: inherit;
   text-decoration: inherit;
+  display: inline-block;
 }
 
 html {
   font-size: 62.5%;
   color: #FCFCFC;
+  height: 100%;
 }
 
 h1,
@@ -382,6 +384,7 @@ header {
   background-color: white;
   color: #000;
   padding: 10px 20px;
+  margin-top: 30px;
 }
 
 .gallery {
@@ -410,12 +413,88 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 40px 0px;
+}
+.linksFlex li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.linksFlex li i {
+  margin-bottom: 20px;
 }
 
-.blog .topBox img,
-.btmBox img {
-  width: 100%;
-  max-width: 50%;
+.blog {
+  background-color: #FCFCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid2x2 {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.grid2x2 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc(50% - 40px);
+      flex-basis: calc(50% - 40px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid2x2 > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 20px;
+}
+.grid2x2 > div > div a {
+  background-color: #152D20;
+  color: #fcfcfc;
+}
+
+.storyBox div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footerContainer {
