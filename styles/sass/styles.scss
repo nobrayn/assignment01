@@ -170,10 +170,18 @@ nav a:focus {
     flex-direction: column;
 }
 
+// footer styling
 .footerContainer {
     display: flex;
+    width: 100%;
     align-items: baseline;
     justify-content: space-between;
+}
+
+.newsletterForm {
+    text-align: center;
+    flex: auto;
+    margin-left: 60px;
 }
 
 // input and submit button styling for footer
@@ -193,7 +201,8 @@ button {
     padding-left: 20px;
     padding-right: 20px;
     border: none;
-    height: 4.9rem;
+    height: 4rem;
+    margin-top: 8px;
 }
 
 input {
@@ -201,7 +210,7 @@ input {
     font-size: 1.8rem;
     padding: 5px;
     border: none;
-    height: 4.9rem;
+    height: 4rem;
 }
 
 .contact {
@@ -209,6 +218,8 @@ input {
 }
 
 .copyright {
+    margin-top: 80px;
+    line-height: 40px;
     text-align: center;
     background-color: #000;
 }

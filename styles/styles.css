@@ -253,31 +253,6 @@ a {
   display: inline-block;
 }
 
-.emailForm {
-  border: none;
-  width: 100%;
-  padding: 10px;
-  text-align: left;
-}
-
-button {
-  width: 29.5%;
-  font-size: 1.8rem;
-  background: black;
-  color: #FCFCFC;
-  padding: 5px;
-  border: none;
-  height: 2.9rem;
-}
-
-input {
-  width: 69.5%;
-  font-size: 1.8rem;
-  padding: 5px;
-  border: none;
-  height: 4.9rem;
-}
-
 html {
   font-size: 62.5%;
   color: #FCFCFC;
@@ -569,12 +544,21 @@ nav a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.newsletterForm {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin-left: 60px;
 }
 
 .emailForm {
@@ -593,7 +577,8 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   border: none;
-  height: 4.9rem;
+  height: 4rem;
+  margin-top: 8px;
 }
 
 input {
@@ -601,7 +586,7 @@ input {
   font-size: 1.8rem;
   padding: 5px;
   border: none;
-  height: 4.9rem;
+  height: 4rem;
 }
 
 .contact {
@@ -609,6 +594,8 @@ input {
 }
 
 .copyright {
+  margin-top: 80px;
+  line-height: 40px;
   text-align: center;
   background-color: #000;
 }
