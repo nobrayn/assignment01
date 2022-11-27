@@ -24,18 +24,41 @@ header {
     background-size: cover;
 }
 
-.upperNav {
+.upperNav{
     display: flex;
     li {
         margin: 0 10px;
     }
 }
 
-// positioning favicons to bottom right of header, will be hidden for mobile
+/* taking care of hover and keyboard navigation */
+nav a,
+nav a {
+    padding: 5px;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+    box-shadow: 0px 0px 2px 4px #FCFCFC;
+}
+
+// positioning favicons to bottom right of header, will be hidden for mobile. 
 .icons {
     position: absolute;
     bottom: 15px;
     right: 20px;
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+/* taking care of hover and keyboard navigation for favicons */
+.icons li:hover,
+.icons li:focus {
+    color: black;
+    background-color: #c3d3cb50;
+    border-radius: 50%;
 }
 
 // flex settings for Suzie's Story
@@ -63,7 +86,13 @@ header {
     background-color: white;
     color: #000;
     padding: 10px 20px;
-        margin-top: 30px;
+    margin-top: 30px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.readMore:hover,
+.readMore:focus {
+    filter: invert(100%);
 }
 
 // flex settings for gallery
@@ -129,6 +158,13 @@ header {
     }
 }
 
+// applying wrapper settings to the story boxes while allowing the images to bleed to 100% for this section
+.storyBox {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .storyBox div {
     display: flex;
     flex-direction: column;
@@ -140,7 +176,33 @@ header {
     justify-content: space-between;
 }
 
+// input and submit button styling for footer
+.emailForm {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
 
+button {
+    width: 29.5%;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: black;
+    color: #FCFCFC;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    height: 4.9rem;
+}
+
+input {
+    width: 69.5%;
+    font-size: 1.8rem;
+    padding: 5px;
+    border: none;
+    height: 4.9rem;
+}
 
 .contact {
     text-align: right;
