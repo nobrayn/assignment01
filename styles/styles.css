@@ -273,6 +273,11 @@ a {
   text-transform: uppercase;
 }
 
+.address {
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   color: #FCFCFC;
@@ -320,6 +325,11 @@ a .readMore {
   line-height: 29px;
 }
 
+@media (max-width: 1100px) {
+  h1 {
+    color: purple;
+  }
+}
 body {
   background-color: #152D20;
 }
@@ -466,9 +476,24 @@ nav a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 10px;
 }
 .linksFlex li i {
   margin-bottom: 20px;
+}
+
+.linksFlex li :nth-child(2) {
+  text-align: center;
+  width: 150px;
+}
+
+.linksFlex li:hover,
+.linksFlex li:focus {
+  color: black;
+  background-color: rgba(195, 211, 203, 0.3137254902);
+  padding: 10px;
+  margin: 0px;
+  border-radius: 30%;
 }
 
 .blog {
@@ -524,6 +549,13 @@ nav a:focus {
   color: #fcfcfc;
 }
 
+.readMoreTwo,
+.readMoreThree {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .storyBox {
   max-width: 1080px;
   width: 90%;
@@ -553,19 +585,19 @@ nav a:focus {
           justify-content: space-between;
 }
 
+.emailForm {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
 .newsletterForm {
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
   margin-left: 60px;
-}
-
-.emailForm {
-  border: none;
-  width: 100%;
-  padding: 10px;
-  text-align: left;
 }
 
 button {
@@ -591,6 +623,17 @@ input {
 
 .contact {
   text-align: right;
+}
+.contact a {
+  -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.contact a:hover,
+.contact a:focus {
+  -webkit-box-shadow: 0px 0px 1px 2px #FCFCFC;
+          box-shadow: 0px 0px 1px 2px #FCFCFC;
 }
 
 .copyright {

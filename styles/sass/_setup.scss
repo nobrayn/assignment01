@@ -56,6 +56,11 @@ a {
     text-transform: uppercase;
 }
 
+// overriding a styling for address in footer to look like <p> text
+.address {
+    text-transform: none;
+    font-family: 'Roboto', sans-serif;}
+
 // p
 // Body Text
 // Roboto, Light, 20px
@@ -129,4 +134,3 @@ a .readMore {
     font-size: 1.8rem;
     line-height: 29px;
 }
-
