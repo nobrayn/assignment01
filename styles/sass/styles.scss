@@ -1,6 +1,7 @@
 @use 'setup' as *;
 @use 'variables' as *;
-@use 'queries' as *;
+// loading my _queries partial here caused problems. Moved media queries into main SCSS file at the bottom instead.
+// @use 'queries' as *;
 
 body {
     background-color: $primaryBackground;
@@ -91,6 +92,7 @@ nav a:focus {
     transition: filter 0.2s ease-in-out;
 }
 
+// hover and focus state effects for buttons
 .readMore:hover,
 .readMore:focus {
     filter: invert(100%);
@@ -216,6 +218,12 @@ nav a:focus {
     text-align: center;
     flex: auto;
     margin-left: 60px;
+    h5 {
+        margin: 50px 0px 20px 0px;
+    }
+    p {
+        margin-bottom: 18px;
+    }
 }
 
 button {
@@ -240,6 +248,7 @@ input {
     height: 4rem;
 }
 
+// contact section styling and hover/focus styling. I'll admit the box-shadow style isn't the best choice but there it is.
 .contact {
     text-align: right;
     a {
@@ -256,4 +265,156 @@ input {
     line-height: 40px;
     text-align: center;
     background-color: #000;
+}
+
+// media queries go here
+@media (max-width: 1240px) {
+
+    h1 {
+        font-size: 9.9vw;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 1042px) {
+
+    // this in-between stage was looking ugly and crowded so I tried to manage it with a slight reduction in font size but I think this flies in the face of the design document, so... I guess I'm fired?
+    .feature,
+    .gallery {
+
+        p {
+            font-size: 1.9rem;
+        }
+
+        h2 {
+            font-size: 4.4rem;
+        }
+
+        h3 {
+            font-size: 4.3rem;
+        }
+
+        h4 {
+            font-size: 3rem;
+        }
+
+        a {
+            font-size: 2rem;
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+    }
+    
+    .footerContainer {
+        
+        h5 {
+            font-size: 3rem;
+            margin: 50px 0px 20px 0px;
+        }
+        a,
+        p {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+// reducing to mobile site formatting at this point
+@media (max-width: 768px) {
+
+    .upperNav li {
+        display: none;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 7rem;
+        max-width: 50%;
+        line-height: 1;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    section .wrapper {
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .gallery h3 {
+        margin: 30px 0px;
+    }
+
+    .galleryFlex {
+        justify-content: space-between;
+        img {
+            max-width: 120%;
+            // min-width: 130px;
+        }
+    }
+
+    .galleryFlex li:nth-of-type(3) {
+        display: none;
+    }
+
+// arranging boxes so zebra image appears first
+    .blog {
+        flex-direction: column;
+        > :nth-child(1) {
+            order: 2;
+        }
+        > :nth-child(2) {
+            order: 1;
+            ;
+        }
+        > :nth-child(3) {
+            order: 3;
+        }
+        > :nth-child(4) {
+            order: 4;
+        }
+        img {
+            max-height: 20%;
+        }
+        > div > div > h4 {
+            text-align: center;
+            margin: 30px 0px;
+        }
+        // okay I give up, can't get the readMore buttons to move to center.
+        .readMore {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    // I've got flex messiness all around here. I'd love to center things but I'm tired.
+    .footerContainer {
+        flex-direction: column;
+        nav ul {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; // so this isn't working either.
+        }
+    }
+
+    .newsletterForm {
+
+        input, button {
+            width: 100%;
+        }
+    }
+
+    .contact {
+        text-align: center;
+    }
 }
