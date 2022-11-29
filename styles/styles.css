@@ -725,6 +725,12 @@ input {
   .galleryFlex li:nth-of-type(3) {
     display: none;
   }
+  .linksFlex li a {
+    font-size: 2rem;
+  }
+  .linksFlex li a i {
+    font-size: 2.5em;
+  }
   .blog {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

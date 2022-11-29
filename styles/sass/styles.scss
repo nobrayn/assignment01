@@ -366,6 +366,16 @@ input {
         display: none;
     }
 
+// ran out of time fixing this. links get pushed off screen on mobile.
+    .linksFlex li 
+    a {
+        
+        font-size: 2rem;
+        i {
+        font-size: 2.5em;
+        }
+    }
+    
 // arranging boxes so zebra image appears first
     .blog {
         flex-direction: column;
