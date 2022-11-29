@@ -1,6 +1,79 @@
 // media queries go here
-@media (max-width: 1100px) {
+@media (max-width: 1240px) {
+
     h1 {
-        color:purple;
+        font-size: 9.9vw;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 1042px) {
+
+    .feature,
+    .gallery {
+
+        p {
+            font-size: 1.9rem;
+        }
+
+        h2 {
+            font-size: 4.4rem;
+        }
+
+        h3 {
+            font-size: 4.3rem;
+        }
+
+        h4 {
+            font-size: 3rem;
+        }
+
+        a {
+            font-size: 2rem;
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+@media (max-width: 539px) {
+
+    .upperNav li {
+        display: none;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 7rem;
+        max-width: 50%;
+        line-height: 1;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    section .wrapper {
+        flex-direction: column;
+        text-align: center;
+        h2 {
+            margin-top: 40px;
+            text-align: center;
+        }
+        p {text-align: left;
+        }
+    }
+
+    .gallery h3 {
+        margin: 30px 0px;
+        color: palevioletred;
+    }
+
+    .galleryFlex {
+        justify-content: space-evenly;
+    }
+
+    .galleryFlex li:nth-of-type(3) {
+        display: none;
     }
 }

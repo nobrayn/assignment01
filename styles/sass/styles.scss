@@ -20,11 +20,12 @@ img {
 header {
     background-image: url(../animal-land-assets/image-1.jpg);
     height: 100vh;
+    background-position: 33%;
     padding: 50px 0;
     background-size: cover;
 }
 
-.upperNav{
+.upperNav {
     display: flex;
     li {
         margin: 0 10px;
@@ -219,6 +220,7 @@ nav a:focus {
 
 button {
     width: 29.5%;
+    min-width: 150px;
     font-size: 1.8rem;
     text-transform: uppercase;
     background: black;
